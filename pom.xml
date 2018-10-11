@@ -463,13 +463,13 @@
                 </dependency>
             </dependencies>
         </profile>
-        <!-- <profile>
+         <profile>
             <id>MySQL</id>
             <properties>
                 <db.script>mysql</db.script>
                 <jpa.database>MYSQL</jpa.database>
                 <jdbc.driverClassName>com.mysql.jdbc.Driver</jdbc.driverClassName>
-                <jdbc.url>jdbc:mysql://localhost:3306/containerbank?serverTimezone=GMT</jdbc.url>
+                <jdbc.url>jdbc:mysql://mysql:3306/containerbank?serverTimezone=GMT</jdbc.url>
                 <jdbc.username>root</jdbc.username>
                 <jdbc.password></jdbc.password>
             </properties>
@@ -481,7 +481,7 @@
                     <scope>runtime</scope>
                 </dependency>
             </dependencies>
-        </profile> -->
+        </profile> 
    </profiles>
 
     <repositories>
