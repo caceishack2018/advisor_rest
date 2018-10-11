@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: containerbank
+  namespace: packapp05
+spec:
+  rules:
+  - host: monapp05.hackathon-container.com
+    http:
+      paths:
+      - path: /containerbank
+        backend:
+          serviceName: containerbank-svc
+          servicePort: 85
+      - path: /AdvisorRest
+        backend:
+          serviceName: advisorrest-svc
+          servicePort: 85
+  tls:
+  - hosts:
+    - monapp05.hackathon-container.com
+

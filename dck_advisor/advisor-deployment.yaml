@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: advisorrest-deployment
+  namespace: packapp05
+spec:
+  selector:
+    matchLabels:
+      app: advisorrest
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: advisorrest 
+    spec:
+      containers:
+      - name: advisorrest
+        image: registry.hackathon-container.com/packapp05/advisorrest:1.6
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: registry
