@@ -471,7 +471,7 @@
                 <jdbc.driverClassName>com.mysql.jdbc.Driver</jdbc.driverClassName>
                 <jdbc.url>jdbc:mysql://mysql:3306/containerbank?serverTimezone=GMT</jdbc.url>
                 <jdbc.username>root</jdbc.username>
-                <jdbc.password></jdbc.password>
+                <jdbc.password>root</jdbc.password>
             </properties>
             <dependencies>
                 <dependency>
